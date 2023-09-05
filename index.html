@@ -9,6 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="telegram.js" defer></script>
   </head>
   <body>
     <section class="section is-paddingless">
@@ -19,25 +21,119 @@
           <div
             class="level is-gapless is-paddingless is-justify-content-center"
           >
+            <div class="header_notification">
+              <p>
+                У вас есть незавершенный заказ. Нажмите, чтобы перейти к
+                оформлению.
+              </p>
+              <div class="shopping_cart_icon">
+                <div>
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.41992 1.77002H4.91992L8.07992 15.48H20.7399L22.0599 5.72002H6.69992"
+                      stroke="url(#paint0_linear_154_53)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.35 17.6201H10.34C9.62207 17.6201 9.04004 18.2021 9.04004 18.9201V18.9301C9.04004 19.6481 9.62207 20.2301 10.34 20.2301H10.35C11.068 20.2301 11.65 19.6481 11.65 18.9301V18.9201C11.65 18.2021 11.068 17.6201 10.35 17.6201Z"
+                      stroke="url(#paint1_linear_154_53)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.35 17.6201H10.34C9.62207 17.6201 9.04004 18.2021 9.04004 18.9201V18.9301C9.04004 19.6481 9.62207 20.2301 10.34 20.2301H10.35C11.068 20.2301 11.65 19.6481 11.65 18.9301V18.9201C11.65 18.2021 11.068 17.6201 10.35 17.6201Z"
+                      stroke="url(#paint2_linear_154_53)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.2099 17.6201H17.1999C16.4819 17.6201 15.8999 18.2021 15.8999 18.9201V18.9301C15.8999 19.6481 16.4819 20.2301 17.1999 20.2301H17.2099C17.9279 20.2301 18.5099 19.6481 18.5099 18.9301V18.9201C18.5099 18.2021 17.9279 17.6201 17.2099 17.6201Z"
+                      stroke="url(#paint3_linear_154_53)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_154_53"
+                        x1="0.653346"
+                        y1="1.77002"
+                        x2="23.0432"
+                        y2="3.62735"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#F5EA99" />
+                        <stop offset="1" stop-color="#DB9B45" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_154_53"
+                        x1="8.9431"
+                        y1="17.6201"
+                        x2="11.7852"
+                        y2="17.7767"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#F5EA99" />
+                        <stop offset="1" stop-color="#DB9B45" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint2_linear_154_53"
+                        x1="8.9431"
+                        y1="17.6201"
+                        x2="11.7852"
+                        y2="17.7767"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#F5EA99" />
+                        <stop offset="1" stop-color="#DB9B45" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint3_linear_154_53"
+                        x1="15.803"
+                        y1="17.6201"
+                        x2="18.6451"
+                        y2="17.7767"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#F5EA99" />
+                        <stop offset="1" stop-color="#DB9B45" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center"
+          >
             <div class="slider">
               <div class="slider-list">
                 <div class="slider-track">
                   <div class="slide">
                     <div class="header_message">
-                        <div id="header_message_left">
-                            <p>Артем</p>
-                            <p>Менеджер</p>
-                        </div>
-                        <div id="header_message_right">
-                            
-                        </div>
+                      <div id="header_message_left">
+                        <p>Артем</p>
+                        <p>Менеджер</p>
+                      </div>
+                      <div id="header_message_right"></div>
                     </div>
                   </div>
                   <div class="slide">2</div>
                   <div class="slide">3</div>
                 </div>
               </div>
-              <div class="slider-arrows" style="display: none;">
+              <div class="slider-arrows" style="display: none">
                 <button type="button" class="prev">&larr;</button>
                 <button type="button" class="next">&rarr;</button>
               </div>
