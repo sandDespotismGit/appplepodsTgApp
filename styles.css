@@ -55,6 +55,7 @@ body {
   display: flex;
   flex-direction: row;
   align-self: stretch;
+  justify-content: center;
 }
 .teletype_block {
   width: 120px;
@@ -131,6 +132,8 @@ body {
   /* align-self: stretch; */
   border-radius: 16px;
   margin: 16px;
+  flex-direction: row;
+  justify-content: space-between;
   background: linear-gradient(91deg, #3a3a3c 0.19%, #262626 99.84%);
 }
 #header_message_left {
