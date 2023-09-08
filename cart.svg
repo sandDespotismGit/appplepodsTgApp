@@ -1,0 +1,26 @@
+<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ic-ecommerce-cart" clip-path="url(#clip0_125_1427)">
+<g id="Vrstva 165">
+<path id="Vector" d="M2 2.07751H4.625L6.995 12.36H16.49L17.48 5.04001H5.96" stroke="url(#paint0_linear_125_1427)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8.69734 14.9651H8.68984C8.15137 14.9651 7.71484 15.4016 7.71484 15.9401V15.9476C7.71484 16.4861 8.15137 16.9226 8.68984 16.9226H8.69734C9.23582 16.9226 9.67234 16.4861 9.67234 15.9476V15.9401C9.67234 15.4016 9.23582 14.9651 8.69734 14.9651Z" stroke="url(#paint1_linear_125_1427)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M13.8429 14.9651H13.8354C13.2969 14.9651 12.8604 15.4016 12.8604 15.9401V15.9476C12.8604 16.4861 13.2969 16.9226 13.8354 16.9226H13.8429C14.3813 16.9226 14.8179 16.4861 14.8179 15.9476V15.9401C14.8179 15.4016 14.3813 14.9651 13.8429 14.9651Z" stroke="url(#paint2_linear_125_1427)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_125_1427" x1="1.42507" y1="2.07751" x2="18.2174" y2="3.47052" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5EA99"/>
+<stop offset="1" stop-color="#DB9B45"/>
+</linearGradient>
+<linearGradient id="paint1_linear_125_1427" x1="7.64214" y1="14.9651" x2="9.77373" y2="15.0825" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5EA99"/>
+<stop offset="1" stop-color="#DB9B45"/>
+</linearGradient>
+<linearGradient id="paint2_linear_125_1427" x1="12.7876" y1="14.9651" x2="14.9192" y2="15.0825" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5EA99"/>
+<stop offset="1" stop-color="#DB9B45"/>
+</linearGradient>
+<clipPath id="clip0_125_1427">
+<rect width="18" height="18" fill="white" transform="translate(0.740234)"/>
+</clipPath>
+</defs>
+</svg>
