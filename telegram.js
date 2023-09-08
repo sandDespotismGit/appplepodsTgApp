@@ -18,7 +18,7 @@ function setName() {
   }
 }
 setName();
-fetch("https://pop.dark-chat.ru/api/reviews")
+fetch("https://pop.applepodsblack.ru/api/reviews")
   .then((response) => response.json())
   .then(function (commits) {
     console.log(commits);
@@ -41,7 +41,7 @@ fetch("https://pop.dark-chat.ru/api/reviews")
         .owlCarousel("update");
     }
   });
-fetch("https://pop.dark-chat.ru/api/notifications")
+fetch("https://pop.applepodsblack.ru/api/notifications")
   .then((response) => response.json())
   .then(function (commits) {
     console.log(commits);
@@ -64,7 +64,7 @@ fetch("https://pop.dark-chat.ru/api/notifications")
         .owlCarousel("update");
     }
   });
-  fetch("https://pop.dark-chat.ru/api/products")
+  fetch("https://pop.applepodsblack.ru/api/products")
   .then((response) => response.json())
   .then(function (commits) {
     console.log(commits);
