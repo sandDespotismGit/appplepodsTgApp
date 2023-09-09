@@ -13,6 +13,18 @@ body {
       rgba(28, 28, 30, 0.86) 100%
     ),
     url(background.png), lightgray 50% / cover no-repeat;
+    overflow: hidden;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.level{
+  width: 376px;
+}
+.column{
+  display: flex;
+  flex-direction: column;
 }
 #profile_avatar_tgLink {
   width: 100%;
