@@ -212,7 +212,7 @@ function testMessage(id) {
 function goToProduct(num) {
   if (tg.initDataUnsafe.user) {
     product_id = num;
-    tg.openLink("https://applepodsblack.ru/product.html");
+    tg.openInvoice("https://applepodsblack.ru/product.html");
   }
 }
 //функция для смены цвета при нажатии на вариант
@@ -266,6 +266,6 @@ function changeCurrency(event){
 async function productPage(){
   let response = await fetch('https://pop.applepodsblack.ru/api/products?populate=deep');
   let data = await response.json();
-  
+
 
 }
