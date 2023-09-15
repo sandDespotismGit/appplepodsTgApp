@@ -2,22 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=376px, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=376px, initial-scale=1, user-scalable=no"
+    />
     <title>Apple Pods</title>
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
     <link
       rel="stylesheet"
       href="owlcarousel/assets/owl.theme.default.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="bulma.min.css"
-    />
+    <link rel="stylesheet" href="bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="telegram.js" defer></script>
   </head>
-  <body style="resize: none;">
+  <body style="resize: none">
     <script src="jquery.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <section class="section is-paddingless">
@@ -124,8 +124,7 @@
           <div
             class="level is-gapless is-paddingless is-justify-content-center"
           >
-            <div class="owl-carousel slide_header">
-            </div>
+            <div class="owl-carousel slide_header"></div>
             <script>
               $(document).ready(function () {
                 $(".slide_header").owlCarousel({
@@ -215,9 +214,10 @@
                         line-height: 18px; /* 138.462% */
                         letter-spacing: -0.078px;
                       "
-                    ><a href="https://t.me/applepods_black" style="all: unset;">
-                      @Applepods_Black
-                    </a>
+                    >
+                      <a href="https://t.me/applepods_black" style="all: unset">
+                        @Applepods_Black
+                      </a>
                     </p>
                     <p
                       style="
@@ -277,7 +277,7 @@
             <div class="quadro_blocks">
               <div class="gray_block">
                 <div class="inner_arrow_text">
-                  <p><a href="delivery.html" style="all: unset">Доставка</a></p>
+                  <p><a href="#openmymodal" style="all: unset">Доставка</a></p>
                   <svg
                     width="17"
                     height="16"
@@ -736,9 +736,7 @@
           <div
             class="level is-gapless is-paddingless is-justify-content-center is-mobile"
           >
-            <div class="products_cards headphones_cards">
-              
-            </div>
+            <div class="products_cards headphones_cards"></div>
           </div>
           <div
             class="level is-gapless is-paddingless is-justify-content-center is-mobile"
@@ -799,7 +797,7 @@
                       <p class="card_price">4 687 ₽</p>
                       <p class="card_description">Apple AirPods Max Silver</p>
                     </div>
-                    <button class="gold_button">Купить</button>
+                    <button class="gold_button" onclick="testMessage('hui')">Купить</button>
                   </div>
                 </div>
               </div>
@@ -841,6 +839,51 @@
           >
             <div id="review_button_div">
               <button class="leave_review">Оставить отзыв</button>
+            </div>
+          </div>
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center is-mobile"
+          >
+            <div id="openmymodal" class="mymodal">
+              <div class="mymodal-dialog">
+                <div class="mymodal-content">
+                  <div class="mymodal-header">
+                    <h3 class="mymodal-title">Доставка</h3>
+                    <div class="closing_button">
+                      <a href="#close" title="Close" class="close"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8701 3.48047L3.87012 13.4805" stroke="#636366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.8701 13.4805L3.87012 3.48047" stroke="#636366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                    </div>
+                  </div>
+                  <div class="mymodal-body">
+                    <div class="dostavka_content">
+                      <div style="width: 100%">
+                        <p id="advance_help">
+                          Введите трек-номер , чтобы узнать статус доставки.
+                        </p>
+                        <form name="tracking" onsubmit="getTrack(document.forms.tracking.elements.track_input.value)">
+                          <input
+                            placeholder="Введите код"
+                            class="gray_input"
+                            type="text"
+                            name="track_input"
+                            id="track_input"
+                          />
+                        </form>
+                      </div>
+                      <div class="track_info">
+                        <p class="track_info_header">Заказ номер</p>
+                        <p class="track_info_addrstate">Адрес доставки:</p>
+                        <p class="track_info_state">Москва</p>
+                        <p class="track_info_addrstate">Текущий статус:</p>
+                        <p class="track_info_state">Москва</p>
+                      </div>
+                      <button class="gold_button">Оформить заказ</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

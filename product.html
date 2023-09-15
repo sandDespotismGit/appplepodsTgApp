@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=376px, initial-scale=1, user-scalable=no"
+    />
+    <title>Apple Pods</title>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="telegram.js" defer></script>
+  </head>
+  <body onload="productPage()">
+    <script src="jquery.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <section class="section is-paddingless">
+      <div class="columns">
+        <div
+          class="column is-gapless is-align-content-center is-align-items-center"
+        >
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center"
+          >
+            <div class="owl-carousel product_page_header">
+              <image
+                style="height: 260px; width: 376px"
+                src="profile_test.jpg"
+              ></image>
+            </div>
+            <script>
+              $(document).ready(function () {
+                $(".product_page_header").owlCarousel({
+                  items: 1,
+                  loop: false,
+                });
+              });
+            </script>
+          </div>
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center is-mobile"
+          >
+            <div id="main_product_info">
+              <p id="main_info_product_name">Apple AirPods Max Silver</p>
+              <div class="select_currency">
+                <p>Выберите валюту</p>
+                <select id="currency_choose" onchange="changeCurrency(event)">
+                  <option value="rub">RUB</option>
+                  <option value="eur">EUR</option>
+                  <option value="byn">BYN</option>
+                </select>
+              </div>
+              <div id="main_info_product_price">
+                <p id="gold_price">4 687 ₽</p>
+                <div id="main_info_currencylogo">₽ RUB</div>
+              </div>
+              <div id="choose_color">
+                <p>Цвет корпуса</p>
+                <div class="color_variants">
+                  <image
+                    class="variant"
+                    onclick="changeVarColor(0)"
+                    src="profile_test.jpg"
+                  ></image>
+                  <image
+                    class="variant"
+                    onclick="changeVarColor(1)"
+                    src="product_example.png"
+                  ></image>
+                  <image
+                    class="variant"
+                    onclick="changeVarColor(2)"
+                    src="profile_test.jpg"
+                  ></image>
+                </div>
+              </div>
+              <div id="stories">
+                <p>Полезная информация</p>
+                <div class="owl-carousel stories">
+                  <div class="story_block">
+                    <div>
+                      <p>Заголовок статьи в три строки</p>
+                    </div>
+                  </div>
+                  <div class="story_block">
+                    <div>
+                      <p>Заголовок статьи в три строки</p>
+                    </div>
+                  </div>
+                  <div class="story_block">
+                    <div>
+                      <p>Заголовок статьи в три строки</p>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                  $(document).ready(function () {
+                    $(".stories").owlCarousel({
+                      items: 3,
+                      loop: true,
+                      rewind: false,
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center is-mobile"
+          >
+            <div id="addon_info">
+              <p>Дополнительная информация</p>
+              <div id="stats">
+                <div id="stats_inner">
+                  <div class="stats_row">
+                    <div class="stats_points">
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                      <div class="stats_point audio"></div>
+                    </div>
+                    <p>Качество звука</p>
+                  </div>
+                  <div class="stats_row">
+                    <div class="stats_points">
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                      <div class="stats_point micro"></div>
+                    </div>
+                    <p>Качество звука</p>
+                  </div>
+                  <div class="stats_row">
+                    <div class="stats_points">
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                      <div class="stats_point battery"></div>
+                    </div>
+                    <p>Качество звука</p>
+                  </div>
+                </div>
+              </div>
+              <div id="functionality">
+                <div
+                  class="functionality_header"
+                  id="functions_header"
+                  onclick="dropdawn('functions_arrow', 'functions' )"
+                >
+                  <p>Комплектация</p>
+                  <img
+                    src="arrow_up.svg"
+                    style="width: 16px; height: 16px"
+                    id="functions_arrow"
+                  />
+                </div>
+                <div class="functionality_content" id="functions">
+                  <li>Наушник</li>
+                  <li>Коробка</li>
+                  <li>Инструкция</li>
+                </div>
+                <div
+                  class="functionality_header"
+                  style="border-top: 1px solid #3a3a3c"
+                  id="functional_header"
+                  onclick="dropdawn('functional_arrow', 'functional' )"
+                >
+                  <p>Функционал</p>
+                  <img
+                    src="arrow_up.svg"
+                    style="width: 16px; height: 16px"
+                    id="functional_arrow"
+                  />
+                </div>
+                <div class="functionality_content" id="functional">
+                  <li>Наушник</li>
+                  <li>Коробка</li>
+                  <li>Инструкция</li>
+                </div>
+                <div
+                  class="functionality_header"
+                  style="border-top: 1px solid #3a3a3c"
+                  id="technics_header"
+                  onclick="dropdawn('technics_arrow', 'technics' )"
+                >
+                  <p>Технические характеристики</p>
+                  <img
+                    src="arrow_up.svg"
+                    style="width: 16px; height: 16px"
+                    id="technics_arrow"
+                  />
+                </div>
+                <div class="functionality_content" id="technics">
+                  <li>Наушник</li>
+                  <li>Коробка</li>
+                  <li>Инструкция</li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="level is-gapless is-paddingless is-justify-content-center is-mobile"
+          >
+          <div id="add_to_cart">
+            <button class="gold_button">Добавить в корзину</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
