@@ -130,6 +130,7 @@
                 $(".slide_header").owlCarousel({
                   items: 1,
                   loop: false,
+                  rewind: false
                 });
               });
             </script>
@@ -268,13 +269,14 @@
               $(".teletype_slider").owlCarousel({
                 items: 1,
                 loop: true,
+                rewind: false
               });
             });
           </script>
           <div
-            class="level is-gapless is-paddingless is-justify-content-center is-mobile"
+            class="level is-gapless is-paddingless is-justify-content-space-between is-mobile"
           >
-            <div class="quadro_blocks">
+            <div class="quadro_blocks" style="padding-left: 8px;">
               <div class="gray_block">
                 <div class="inner_arrow_text">
                   <p><a href="#openmymodal" style="all: unset">Доставка</a></p>
@@ -318,7 +320,7 @@
                 <p class="gray_block_description">Ответы на все вопросы</p>
               </div>
             </div>
-            <div class="quadro_blocks">
+            <div class="quadro_blocks" style="padding-right: 8px;">
               <div class="gold_block">
                 <p>Связь с менеджером</p>
                 <div class="inner_logo_gold_block">
