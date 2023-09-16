@@ -10,13 +10,18 @@ if (tg.initDataUnsafe.user) {
   username = tg.initDataUnsafe.user.username;
   first_name = tg.initDataUnsafe.user.first_name;
   last_name = tg.initDataUnsafe.user.last_name;
+  profile_img_url = tg.initDataUnsafe.user.photo_url;
 }
 let profile_name = document.querySelector("#profile_avatar > p");
+let profile_img = document.querySelector('#profile_image');
 function setName() {
   if (username) {
     profile_name.innerText = `${first_name} ${last_name}`;
+    // profile_img.src = profile_img_url;
+
   } else {
     profile_name.innerText = "Иван Иванов";
+    // profile_img.src = '';
   }
 }
 setName();
