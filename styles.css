@@ -14,7 +14,15 @@ body {
     ),
     url(background.png), lightgray 50% / cover no-repeat;
   overflow: hidden;
+  background-attachment: fixed;
   scrollbar-width: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 ::-webkit-scrollbar {
   display: none;
@@ -689,7 +697,7 @@ body {
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
 }
 #advance_help {
